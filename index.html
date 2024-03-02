@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Food Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Resort</h1>
+        </div>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#avability" class="btn">Avability</a></li>
+
+        </ul>
+        <div class="icon">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </nav> <br>
+<!-- Image slideder portion start -->
+<section id="home">
+<div class="maxcont">
+<div class="slide-container">
+	
+	<div class="slides">
+		<img src="img1.jpg" class="active">
+		<img src="img2.jpg">
+		<img src="img3.jpg">
+		<img src="img4.jpg">
+		<img src="img5.jpg">
+	</div>
+
+	<div class="buttons">
+		<span class="next">&#10095;</span>
+		<span class="prev">&#10094;</span>
+	</div>
+
+	
+</div>
+</div>
+</section>
+
+<!-- //Image slideder portion end -->
+
+
+<!-- form Avability start -->
+<section id="avability">
+<div id="reservation-form">
+    <h2>Check Avability</h2>
+    <form id="bookingForm">
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="date" id="checkInDate" required>
+   
+    <label for="checkOutDate">Check-out Date:</label>
+    <input type="date" id="checkOutDate" required>
+   
+    <label for="roomNumber">Room Number (1-6):</label>
+    <input type="number" id="roomNumber" min="1" max="6" required>
+   
+    <button type="button" onclick="checkAvailability()">Submit Reservation</button>
+   </form>
+   </div>
+</section>
+
+<!-- form Avability end -->
+
+<!-- about start -->
+
+<section class="about" id="about">
+
+    <div class="row">
+       <div class="image">
+          <img src="about-img-1.jpg" alt="">
+       </div>
+       <div class="content">
+          <h3>best staff</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+       </div>
+    </div>
+ 
+    <div class="row revers">
+       <div class="image">
+          <img src="about-img-2.jpg" alt="">
+       </div>
+       <div class="content">
+          <h3>best foods</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+       </div>
+    </div>
+ 
+    <div class="row">
+       <div class="image">
+          <img src="about-img-3.jpg" alt="">
+       </div>
+       <div class="content">
+          <h3>swimming pool</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+       </div>
+    </div>
+ 
+ </section>
+ 
+ <!-- about section ends -->
+
+<!-- reservation section starts  -->
+
+<section class="reservation" id="reservation">
+
+    <form action="" method="post">
+       <h3>make a reservation</h3>
+       <div class="flex">
+          <div class="box">
+             <p>check in <span>*</span></p>
+             <input type="date" name="check_in" class="input" required>
+          </div>
+          <div class="box">
+             <p>check out <span>*</span></p>
+             <input type="date" name="check_out" class="input" required>
+          </div>
+          <div class="box">
+             <p>adults <span>*</span></p>
+             <select name="adults" class="input" required>
+                <option value="1">1 adult</option>
+                <option value="2">2 adults</option>
+                <option value="3">3 adults</option>
+                <option value="4">4 adults</option>
+                <option value="5">5 adults</option>
+                <option value="6">6 adults</option>
+             </select>
+          </div>
+          <div class="box">
+             <p>childs <span>*</span></p>
+             <select name="childs" class="input" required>
+                <option value="-">0 child</option>
+                <option value="1">1 child</option>
+                <option value="2">2 childs</option>
+                <option value="3">3 childs</option>
+                <option value="4">4 childs</option>
+                <option value="5">5 childs</option>
+                <option value="6">6 childs</option>
+             </select>
+          </div>
+          <div class="box">
+             <p>rooms <span>*</span></p>
+             <select name="rooms" class="input" required>
+                <option value="1">1 room</option>
+                <option value="2">2 rooms</option>
+                <option value="3">3 rooms</option>
+                <option value="4">4 rooms</option>
+                <option value="5">5 rooms</option>
+                <option value="6">6 rooms</option>
+             </select>
+          </div>
+       </div>
+       <input type="submit" value="Submit" name="check" class="btn">
+    </form>
+ 
+ </section>
+ 
+ <!-- reservation section ends -->
+
+
+ <!-- contact us start -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <div class="row">
+ 
+       <form action="" method="post">
+          <h3>send us message</h3>
+          <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+          <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+          <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="enter your number" class="box">
+          <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" name="send" class="btn">
+       </form>
+ 
+       <div class="faq">
+<img src="" alt="">
+       </div>
+ 
+    </div>
+ 
+ </section>
+ 
+ <!-- contact section ends -->
+
+
+ <!-- contact us end  -->
+
+ <!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:03119712164"><i class="fas fa-phone"></i> +923-456-7890</a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i> +923-222-3333</a>
+         <a href="mailto:zahidh3519@gmail.com"><i class="fas fa-envelope"></i> zahidh3519@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> gilgit, pakistan - XXXXXX</a>
+      </div>
+
+      <div class="box">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#reservation">reservation</a>
+      
+         <a href="#contact">contact</a>
+        
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2024 by Team The logic Legends | all rights reseved!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
